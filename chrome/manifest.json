@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Medivh",
+  "description": "This extension shows a Google Image search result for the current page",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [{
+    "matches": ["http://stackoverflow.com/*", "http://alseambusher.github.io/*", "http://jashwanth.in/*", "https://www.reddit.com/*", "http://www.adobe.com/*", "https://landing.adobe.com/*"],
+    "js": ["heatmap.min.js", "parse.js"]
+
+  }],
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+  ]
+}
