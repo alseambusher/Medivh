@@ -9,9 +9,12 @@
     "default_icon": "icon.png"
   },
   "content_scripts": [{
-    "matches": ["http://stackoverflow.com/*", "http://alseambusher.github.io/*", "http://jashwanth.in/*", "https://www.reddit.com/*", "http://www.adobe.com/*", "https://landing.adobe.com/*"],
-    "js": ["heatmap.min.js", "parse.js"]
+    "matches": ["http://stackoverflow.com/*", "http://alseambusher.github.io/Medivh/demo.htm", "http://jashwanth.in/*", "https://www.reddit.com/*", "http://www.adobe.com/*", "https://github.com/*"],
+    "js": ["parse.js"]
 
+  }, {
+    "matches": ["http://alseambusher.github.io/Medivh/mousedemo.htm", "http://localhost:8002/mousedemo.htm", "http://kur.deepgram.com/*"],
+    "js": ["heatmap.min.js", "heatmap-gen.js"]
   }],
   "permissions": [
     "activeTab",

@@ -5,7 +5,7 @@ import numpy as np
 
 def load_image(path):
     try:
-        img = skimage.io.imread( path ).astype( float )
+        img = skimage.io.imread(path).astype(float)
     except:
         return None
 
